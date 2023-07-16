@@ -1,0 +1,41 @@
+# Site settings
+title: Password Generator by Youno
+description: solo project
+
+
+# Build settings
+markdown: kramdown
+theme: minima # Replace with the name of your desired theme
+plugins:
+  - jekyll-feed
+
+# Exclude files or directories from the build process
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Pagination settings (optional)
+paginate: 5
+paginate_path: "/page/:num/"
+
+# Development settings
+destination: ./_site
+permalink: pretty
+markdown_ext: markdown,md
+highlighter: rouge
+timezone: # Set your desired timezone here, e.g., America/New_York
+
+# GitHub Pages configuration
+# If you're deploying to GitHub Pages, uncomment and customize the following settings:
+# remote_theme: # Specify a remote theme if not using a local theme
+# plugins:
+#   - jekyll-feed
+#   - jekyll-remote-theme
+#   - jekyll-seo-tag
+
+# Additional custom configurations or overrides can be added below
