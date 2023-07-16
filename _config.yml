@@ -24,7 +24,7 @@ paginate: 5
 paginate_path: "/page/:num/"
 
 # Development settings
-destination: ./_site
+destination: ./assests/css
 permalink: pretty
 markdown_ext: markdown,md
 highlighter: rouge
