@@ -3,13 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="style" href="style.css">
+    
+    <style>
+        /* CSS code */
+        /* font import section */
+        @import url('https://fonts.googleapis.com/css2?family=Karla:wght@500;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+        /* Code section */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-color: #0d2546;
+        }
+        .main-section {
+            background: #1F2937;
+            width: 550px;
+            height: 550px;
+            flex-shrink: 0;
+            margin-top: 60px;
+        }
+
+        .hero {
+            display: flex;
+            width: 354px;
+            flex-direction: column;
+            flex-shrink: 0;
+            color: #FFF;
+            font-family: 'Karla', sans-serif;;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 40px;
+            letter-spacing: -1px;
+            text-align: left;
+            margin: 115px auto 60px 52px;
+        }
+        .green {
+            color: #4ADF86;
+        }
+        #description {
+            color: var(--medium-grey, #D5D4D8);
+            /* text-xl/leading-7/font-normal */
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+        }
+        .button {
+            text-align: left;
+            margin-left: 52px;
+            gap: 12px;
+        }
+        .button > button {
+            border-radius: 6px;
+            background: #10B981;
+            color: var(--white, #FFF);
+            /* text-base/leading-6/font-medium */
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            /* shadow/sm */
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+            display: inline-flex;
+            padding: 9px 17px 9px 15px;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            border: none;
+        }
+        .line {
+            margin: 35px auto;
+            padding: 0px 49px;
+            border-bottom: 1px solid #2F3E53;
+            width: 86%;
+        }
+        .inputs {
+            display: flex;
+            margin: 35px 40px;
+        }
+        .inputs > p {
+            border-radius: 6px;
+            background: #273549;
+            width: 211px;
+            height: 29px;
+            flex-shrink: 0;
+            margin-left: 12px;
+            margin-right: 12px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 5px;
+            color: white;
+            font-family: monospace;
+            font-size: 20px;
+        }
+        button:active {
+            background: #0b9164;
+        }
+        .green-password {
+            color: #4ADF86;
+        }
+    </style>
+    
     <title>Password generator</title>
 </head>
 <body>
     <div class="main-section">
         <div class="hero">
-            <h1>Generate random passwords</h1>
+            <h1><span > Generate random</span> passwords</h1>
             <span id="description">Never use an insecure password again.</span>
         </div>
         <div class="button">
@@ -17,8 +130,8 @@
         </div>
         <div class="line"></div>
         <div class="inputs">
-            <p id="password1"> </p>
-            <p id="password2"> </p>
+            <p id="password1" > </p>
+            <p id="password2" > </p>
         </div>
     </div>
 

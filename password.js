@@ -16,6 +16,11 @@ function generatePasswords() {
         password2 += random();
     }
 
-    document.getElementById("password1").textContent = password1;
-    document.getElementById("password2").textContent = password2;
+    let password1Element = document.getElementById("password1");
+    password1Element.textContent = password1;
+    password1Element.classList.add("green-password");
+
+    let password2Element = document.getElementById("password2");
+    password2Element.textContent = password2;
+    password2Element.classList.add("green-password");
 }
